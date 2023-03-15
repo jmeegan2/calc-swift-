@@ -23,6 +23,7 @@ struct ContentView: View {
         VStack(spacing: 12) {
             Spacer()
             HStack(spacing: 12) {
+                Spacer()
                 Text(currentNumber)
                     .font(.largeTitle)
                     .fontWeight(.bold)
