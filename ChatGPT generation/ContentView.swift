@@ -114,10 +114,12 @@ struct ContentView: View {
     }
     
     func updatePreviousCalculations() {
+        
         if let operation = storedOperation.first {
-            let calculation = "\(storedNumber) \(operation) \(currentNumber) = \(currentNumber)"
+            let operationResult = "\(storedNumber) \(operation) \(currentNumber)"
+            let calculation = "\(storedNumber) \(operation) \(currentNumber) = "
             previousCalculations.append(calculation)
-            storedEntries.append(calculation)
+//            storedEntries.append(calculation)
         }
     }
 }
